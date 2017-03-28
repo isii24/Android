@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgbg"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.isi24.taskmanager.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/MyButton"
+            android:background="@color/pozadina"
+            android:fontFamily="casual"
+            android:textColor="@color/tekst"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textStyle="bold|normal"
+            android:layout_margin="3dp"
+            android:elevation="1dp"
+            android:translationZ="1dp"
+            android:text="@string/butt1" />
+
+        <Button
+            android:id="@+id/butt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/tekst"
+            android:theme="@style/MyButton"
+            android:textStyle="bold|normal"
+            android:shadowColor="@color/colorPrimaryDark"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@color/pozadina"
+            android:layout_margin="3dp"
+            android:elevation="1dp"
+            android:fontFamily="casual"
+            android:translationZ="1dp"
+            android:text="@string/butt2" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lin"
+        android:layout_alignParentTop="true" />
+</android.widget.RelativeLayout>
